@@ -12,7 +12,7 @@ echo '============================
 cd ~
 mkdir .ssh
 cd .ssh
-curl https://github.com/$1.keys > authorized_keys
+curl https://github.com/lenovoy450.keys > authorized_keys
 chmod 700 authorized_keys
 cd ../
 chmod 600 .ssh
@@ -29,4 +29,3 @@ service ssh restart
 systemctl restart sshd
 systemctl restart ssh
 cd ~
-rm -rf key.sh
